@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Indirim_TrCityregion>
+            <version>0.2.2</version>
+        </Indirim_TrCityregion>
+    </modules>
+    <global>
+	
+	<helpers>
+            <trcityregion>
+                <class>Indirim_TrCityregion_Helper</class>
+            </trcityregion>
+        </helpers>
+		
+		
+	<models>
+	<trcityregion>
+	 <class>Indirim_TrCityregion_Model</class>
+	
+	<resourceModel>trcityregion_mysql4</resourceModel>
+	</trcityregion>
+	<trcityregion_mysql4>
+                <class>Indirim_TrCityregion_Model_Mysql4</class>
+               
+                <entities>
+                    <city>
+                        <table>directory_country_city</table>
+                    </city>
+                </entities>
+               
+            </trcityregion_mysql4>
+	</models>
+	
+        <resources>
+            <trcityregion_setup>
+                <setup>
+                    <module>Indirim_TrCityregion</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </trcityregion_setup>
+            <trcityregion_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </trcityregion_write>
+            <trcityregion_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </trcityregion_read>
+        </resources>
+	
+    </global>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Indirim_TrCityregion>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Indirim_TrCityregion>
+    </modules>
+</config> 
